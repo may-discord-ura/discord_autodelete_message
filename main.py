@@ -64,6 +64,7 @@ def log_deleted_messages(channel_name, messages):
     all_logs.sort()  # timestampが最初に来るので、文字列としてソートすれば時系列順になる
 
     # ログファイルに書き込む
+    os.makedirs("autodelete_log", exist_ok=True)
     with open(log_file, "w", encoding="utf-8") as f:
         f.writelines(all_logs)
 
