@@ -1,0 +1,2 @@
+# discord_autodelete_message
+指定したチャンネルのメッセージを一定期間で自動削除するbot
